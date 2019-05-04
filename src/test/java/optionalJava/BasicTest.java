@@ -1,6 +1,6 @@
 package optionalJava;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.util.Optional;
 
@@ -16,6 +16,6 @@ class BasicTest {
 		Car car = new Car("Opel Corsa");
 		car.setTyre(Optional.of(Utils.buildDTyre("Dunlop Sport", 2017, "A")));
 		Optional<Car> theCar = Optional.of(car);	
-		assertTrue(theCar.isPresent());	
+		assertFalse(theCar.isPresent());	
 	}
 }
