@@ -1,4 +1,4 @@
 language: java
-sudo: false # faster builds
+sudo: false # builds
 jdk:
   - oraclejdk8
